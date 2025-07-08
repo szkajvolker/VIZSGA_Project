@@ -3,11 +3,13 @@ import NavBar from "./components/NavBar";
 import CreatePage from "./pages/CreatePage";
 import ScooterPage from "./pages/ScooterPage";
 import HomePage from "./pages/HomePage";
+// import { Toaster } from "sonner"; // enélkül nem működnek a toaster.success és toaster.error üzenetek
 
 function App() {
   return (
     <>
-      <NavBar></NavBar>
+      {/* <Toaster richColors /> */}
+      <NavBar></NavBar> {/* Lehetne self closing tag: <Navbar/> */}
       <Routes>
         <Route path="/create" element={<CreatePage />} />
         <Route path="/home" element={<HomePage />} />

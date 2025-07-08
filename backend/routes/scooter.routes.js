@@ -9,8 +9,8 @@ import {
 
 const router = express.Router();
 
-router.post("/create", createNewScooter);
-router.get("/all", getAllScooters);
+router.post("/create", createNewScooter); // lehetne simán "/"
+router.get("/all", getAllScooters); // lehetne simán "/"
 router.put("/:id", updateScooterByID);
 router.delete("/:id", deleteScooterByID);
 router.get("/:id", getScooterById);

@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // jól sejtetted hogy ezt Link-el kellett volna megoldani de sajnos nem használtad fel.
 
 const NavBar = () => {
   const navigate = useNavigate();
 
   const handleGoToCreatePage = () => {
+    // Elfogadom de ilyen egyszerű logikát nem kell kiszervezni, Link-el kevesebb kód.
     navigate("/create");
   };
 
@@ -27,6 +28,16 @@ const NavBar = () => {
         >
           Go to Home
         </button>
+        {/*  <Link
+          to={"/create"}
+        >
+          Create Page
+        </Link> */}
+        {/*  <Link
+          to={"/"}
+        >
+          Home
+        </Link> */}
       </div>
     </nav>
   );
